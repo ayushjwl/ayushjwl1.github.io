@@ -1,0 +1,107 @@
+/*background color*/
+body {
+background-color: lightgoldenrodyellow;
+ }
+ /*background color*/
+ /* border outline*/
+ p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+ p.outset {border-style: outset;}
+ body {
+  font-size: 28px;
+}
+/*border outline*/
+/*horizontal tabs*/
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: lightgoldenrodyellow;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #f2f2f2;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1.5px solid #ccc;
+  border-top: none;
+}
+/*horizontal tabs*/
+/*horizontal navigation bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: underline;
+}
+
+li a:hover:not(.active) {
+  background-color: gray;
+}
+
+li a.active {
+	color: white;
+  background-color: #4CAF50;
+}
+
+/*horizontal navigation bar*/
+/*rounded image*/
+img {
+  border-radius: 100%;
+}
+/*rounded image*/
+/*style to tab content*/
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: none;
+  border-top: none;
+}
+/*style to tab content*/

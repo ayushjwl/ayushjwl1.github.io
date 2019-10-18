@@ -1,0 +1,85 @@
+<html>
+<head>
+<link rel="stylesheet" href="main.css"/> 
+<style>
+.row::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.column {
+  float: right;
+  width: 10%;
+  padding: 5px;
+}
+.column1 {
+  float: right;
+  width: 65%;
+  padding: 5px;
+}
+
+</style>
+<title>About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="footer">
+</div>
+<!--horzontal tabs-->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Research')">Research</button>
+  <button class="tablinks" onclick="openCity(event, 'academic responsibilities')">Academic responsibilities</button>
+</div>
+<div class="row" >
+   <div class="column">
+  <p><img src="ayush.jpg" alt="A" width="100" height="100"></p>
+  <p><b><font size="4">Ayush Jaiswal</font> </b>
+  <div class="column1">
+  
+   <a href="https://www.facebook.com/1Ayush.Jaiswal" ><p><i class="fa fa-facebook"></i></p></a>
+   <a href="https://twitter.com/home" ><p><i class="fa fa-twitter"></i></p></a>
+   <a href="https://mailto:ayush.jaiswal@gmail.com" ><p><i class="fa fa-Google"></i></p></a>
+   <a href="https://www.linkedin.com/in/ayush-jaiswal-91312bb0/" ><p><i class="fa fa-linkedin-square"></i></p></a>
+   <a href="https://join.skype.com/invite/nr7S11YmTv70" ><p><i class="fa fa-skype"></i></p></a>
+  </div>
+  
+  </div>
+
+<div id="About" class="tabcontent">
+  <p>Hello! Thanks for visiting the website.</p>
+  <p>I am a research scholar in the discipline of mathematics of <i><b>Indian Institute of Technology, Gandhinagar</b></i>.</p>
+  <p>Before joining IITGn, I was at <i><b>Indian Institute of Technology, Kanpur</b></i> , was pursuing masters in mathematics.</p>
+   </div>
+
+<div id="Research" class="tabcontent">
+  <p><b>Research</b></p>
+  <p>My Research interest is "Vector Bundles and related topics.</p> 
+</div>
+
+<div id="academic responsibilities" class="tabcontent">
+   <font size="4"> <p><b>2017-2018</b>  - Spring semester: TA in MA 101(Real Analysis and ) , Autumn semester: TA in MA 102(Linear Algebra and ODE)</p>
+    <p><b>2018-2019</b>  - Spring semester: TA in MA 509(Real Analysis) , Autumn semester: GTF in MA 102(Linear Algebra and ODE)</p>
+    <p><b>2019-2020</b>  - Spring semester: GTF in MA 504(Linear Algebra) </p>
+</font></div>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<!--horizontal navigation bar-->
+</body>
+</html>
